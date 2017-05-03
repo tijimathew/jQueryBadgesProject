@@ -13,6 +13,7 @@ $(function() {
   			course.addClass('course');
   			course.append('<h3>' + completedCourses[i].title +  '</h3>');
   			course.append('<img src="' + completedCourses[i].badge + '"/>');
+  			course.append('<a class="btn btn-primary" href="' + completedCourses[i].url + '" target="_blank">See Course</a>');
   		}
   	}
   });
