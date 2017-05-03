@@ -6,7 +6,6 @@ $(function() {
   	dataType:'jsonp',
   	success: function(response){
   		var completedCourses = response.courses.completed;
-  		console.log(completedCourses[0]);
   		for (var i = 0; i < completedCourses.length; i++) {
   			$('#badges').append('<div></div>');
   			var course = $('#badges div:last-child');
